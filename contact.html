@@ -1,1 +1,71 @@
-<!-- test -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>North Star Bakery - Contact & Pre-Orders</title>
+</head>
+<body>
+  <header>
+    <h1>Pre-Orders & Inquiries</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Order or contact us</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>contact information</legend>
+          
+          <p>
+            <label for="full-name">Name:</label><br>
+            <input type="text" id="full-name" name="full_name" required>
+          </p>
+          
+          <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Order Details</legend>
+          
+          <p>
+            <label for="request-type">Request Type:</label><br>
+            <select id="request-type" name="request_type" required>
+              <option value="">-- Select an Option --</option>
+              <option value="inquiry">General Question</option>
+              <option value="catering">Event Catering</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="item-details">Item Details:</label><br>
+            <textarea id="item-details" name="item_details" rows="4" cols="40" placeholder="List items and quantities..." required></textarea>
+          </p>
+
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit Request</button>
+        </p>
+      </form>
+    </section>
+
+    <section>
+
+      <p>123 place street, Everytown</p>
+      <p>Mon–Sun: 7:00 AM–8:00 AM</p>
+    </section>
+  </main>
+
+</body>
+</html>
